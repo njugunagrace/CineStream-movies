@@ -1,0 +1,280 @@
+
+.title-movie p{
+    color: white;
+    text-align: left;
+   font-size: 4em;
+   padding-top: 1.5em;
+   padding-left: 1em;
+  
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* -webkit-font-smoothing: antialiased; */
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    /* background-image: linear-gradient(to right, #082537 , #000000); */
+    background-color: black;
+    color: #212121;
+    font-size: 12px;
+    min-height: 100%;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .section-header {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+  }
+  section {
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+    /* padding-bottom: 70px; */
+  }
+  /* a, a:link, a:visited {
+    color: #212121;
+    text-decoration: none;
+  } */
+  .movie-slider {
+    height: 560px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .movie-slider.fullwidth .slider-item {
+    height: 480px;
+    line-height: 480px;
+    width: 100%
+  }
+  .movie-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+    perspective: 800px  !important;
+  }
+  .slider-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+    display: none;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 320px;
+    cursor: pointer;
+  }
+  .indicators {
+    top: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 40px 0 0 -77px;
+    position: absolute;
+  }
+  .indicators li {
+    color: #39A7BF;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    width: 16px;
+  }
+  .indicators li:last-child {margin: 0;}
+  .indicators a {
+    background:#39A7BF;
+    border-radius: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+  }
+  .indicators .active a {
+    background: #E4E5E6;
+  }
+  
+  .first-movie {
+    background-image: url(/images/sister.jpeg);
+    background-repeat: no-repeat;
+  }
+  .first-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 10px;
+    bottom: 15%;
+    color: white;
+    width: 185px;
+  
+  
+  }
+  
+  .second-movie {
+    background: url(/images/why\ her.jpeg);
+    background-repeat: no-repeat;
+  }
+  .second-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 10px;
+    bottom: 15%;
+    color: white;
+    width: 185px;
+  }
+  .third-movie {
+    background: url(/images/Ginny&Georgia.jpeg);
+    background-repeat: no-repeat;
+  }
+  .third-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 10px;
+    bottom: 15%;
+    color: white;
+    width: 185px;
+  }
+  .four-movie {
+    background: url(/images/tale.jpeg);
+    background-repeat: no-repeat;
+  }
+  .four-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 10px;
+    bottom: 17%;
+    color: white;
+    width: 188px;
+  }
+  .five-movie {
+    background: url(/images/kim.jpeg);
+    background-repeat: no-repeat;
+  }
+  .five-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 8px;
+    bottom: 17%;
+    color: white;
+   
+     width: 187px;
+  }
+  .six-movie {
+    background: url(/images/manifest.jpeg);
+    background-repeat: no-repeat;
+  }
+  .six-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 10px;
+    bottom: 15%;
+    color: white;
+    width: 185px;
+  }
+  .seven-movie {
+    background: url(/images/unforgetable\ love.jpeg);
+    background-repeat: no-repeat;
+  
+  }
+  .seven-movie p{
+    position: absolute;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(57, 167, 191, 0.5);
+    padding: 10px;
+    bottom: 15%;
+    color: white;
+    width: 185px;
+  }
+  
+  
+  
+  body{
+      background-color: black;
+  }
+  .wrapper{
+      /* min-height: 70vh; */
+      display: flex;
+  }
+  .box{
+      margin: 0.3rem;
+  }
+  .single-box{
+      width: 300px;
+      height: 400px;
+  }
+  .box-content{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translateZ(-150px);
+      transition: all 1s;
+  }
+  .sides{
+      position: absolute;
+      width: 300px;
+      height: 400px;
+      text-align: center;
+  }
+  .side-1{
+      transform: rotateY(0deg) translateZ(150px);
+      z-index: 2;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(images/ariel.jpg);
+  }
+  .side-2{
+      background-color: black;
+      color: deepskyblue;
+      transform: rotateY(90deg) translateZ(150px);
+  }
+  .box:hover .box-content{
+      transform: translateZ(-150px) rotateY(-90deg);
+  }
+  .content{
+      /* display: flex; */
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+  }
+  .content h2{
+      font-family: alfa slab one;
+      font-size: 25px;
+  }
+  .content p{
+      font-size: 8px;
+      line-height: 25px;
+      font-family: 'Montserrat', sans-serif;
+  }
+  .content i {
+      color: yellow;
+  }
+  .socials{
+      margin-top: 30px;
+  }
+  .socials i{
+      margin: 0 15px;
+  }
+  @media (max-width:991px){
+      .wrapper{
+          flex-direction: column;
+      }
+  }
