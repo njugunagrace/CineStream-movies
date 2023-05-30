@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <img src="/images/Movie_logo2-removebg-preview.png" alt=""class="blue">
+    </div>
+    <main class="main">
+      <h1><b style="color: #39a7bf;">CineStream</b><br>Your Ultimate Journey <br>Begins Here <br><br>
+        <a href="home.html"><button id="coer">Uncover The Magic <i class='bx bx-right-arrow-alt'></i></button></a></h1>
+     
+     
+      <section class="container"></section>
+     <video src="/images/Money Heist _ LA CASA DE PAPEL _ TV Series _ Season 1.mp4" autoplay muted></video>
+     
+    </main>
+    <nav class="hide__nav">
+      <div style="--i: 2">Home</div>
+      <div style="--i: 2">Series</div>
+      <div style="--i: 3">Movies</div>
+    </nav>
+ <script src="/main.js"></script>
+   <script>
+    document.querySelector(".hamburger").addEventListener("click", () => {
+    document.querySelector(".container").classList.toggle("rotate__container");
+    document.querySelectorAll(".line").forEach((Element) => {
+      Element.classList.toggle("line-animate");
+    });
+    document.querySelector("nav").classList.toggle("hide__nav");
+    document.querySelector("h1").classList.toggle("hide__nav");
+  });
+ 
+  window.addEventListener("resize", function() {
+    var video = document.querySelector("video");
+    video.style.minHeight = window.innerHeight + "px";
+    video.style.minWidth = window.innerWidth + "px";
+  });
+​
+​
+​
+let button = document.getElementById("cover");
+button.addEventListener('click',function(){
+button.innerHTML = "Uncover the magic";
+button.style.backgroundColor = "transparent";
+button.style.fontSize="20px"
+button.style.padding ="10px";
+button.style.borderRadius = '30px';
+button.style.border = '2px'
+​
+​
+})
+     
+​
+​
+   </script>
+  </body>
+  
+​
+</html>
